@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,9 +10,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/comfortaalight"
         android:text="Hello"
         android:textColor="#000"
         android:textSize="80dp"
+        android:layout_marginTop="100dp"
         android:textStyle="normal"
         tools:layout_editor_absoluteX="113dp"
         tools:layout_editor_absoluteY="184dp" />
@@ -25,19 +27,48 @@
         android:textColor="#000"
         android:textSize="60dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="312dp" />
+        android:layout_marginTop="200dp"
+        />
+    <View
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:background="#B578E0"
+        />
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="96dp"
-        android:src="@drawable/circolo"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="74dp" />
-    <Button
-        android:background="@drawable/retangulo"
-        android:text="Start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="337dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="350dp"
+        android:src="@drawable/icones"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="450dp"
+        android:text="Lorem ipsum dolor sit amet. consectetur adipiscing elit."
+        android:textSize="22dp"
+        app:layout_anchorGravity="center" />
+
+    <ImageView
+        android:layout_width="82dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/circolo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="84dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
